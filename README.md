@@ -8,3 +8,5 @@ wget -e robots=off -H --user-agent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1
 +machine+learning
 +data+science
 +modelling
+
+The papers used in this analysis can be obtained by using the search terms above and the unix command to download the raw pdfs.
