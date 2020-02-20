@@ -11,4 +11,7 @@ wget -e robots=off -H --user-agent="Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1
 - +statistics
 - +machine+learning
 - +data+science
+- +optimization
 - +modelling
+- +statistical+learning
+- +machine+learning
