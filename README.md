@@ -23,10 +23,9 @@ example (n, p≈ 50 ) is used in order to better illustrate the methods. A heatm
 can be found in Figure 2.
 
 ```
-Figure 1: High-frequency words in Statistics Lecture
-Notes 
+Figure 1: High-frequency words in Statistics Lecture Notes 
 ```
-![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/1.jpg)
+![Image](https://github.com/leonwu4951/Paper-Configurations/blob/master/figures/1.jpg)
 
 ```
 Figure 2: Heatmap word frequencies for each paper
@@ -48,39 +47,72 @@ this weighting of extreme values which could be desirable.
 
 ## Classical Scaling
 
-Classical scaling aims to create a configuration of the data from the distances between points. FromFigure
+Classical scaling aims to create a configuration of the data from the distances between points. From Figure
 3 it can be seen that there only 3 large eigenvalues for the Euclidean distance matrix. This means that the
 data can be projected onto 3 (possibly 2) dimensions without losing too much information. For the Manhattan
 distance matrix, there are perhaps 3-7 significantly large eigenvalues (Figure 4). However, projection onto 2
 dimensions would likely yield useful results still. A 2-dimensional plot is also extremely informative to human
-
-
 users and so this is the dimensionality that is chosen. The negative eigenvalues in Figure 4 arise due to the fact
 the distances between papers are non-euclidean.
-The configurations acquired from applying classical scaling are shown inFigures 5 and 6 for the Eu-
+The configurations acquired from applying classical scaling are shown in Figures 5 and 6 for the Eu-
 clidean and Manhattan distances respectively. (A reduced number of papers is displayed in order to increase
 interpretability.)
+
+```
+Figure 3: Eigenvalues from the Euclidean Distance Matrix
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/3.png)
+```
+Figure 4: Eigenvalues from the Manhatten Distance
+Matrix
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/4.png)
+
+```
+Figure 5: Configuration from Classical scaling (Euclidean)
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/5.png)
+
+```
+Figure 6: Configuration from Classical scaling (Manhattan)
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/6.png)
+
 
 ## Ordinal Scaling
 
 Ordinal scaling also aims to create a configuration of the data, but minimizes a penalty function that measures
-the "stress" of the configuration. Using a random start, the resulting configuration of the ordinal scaling results
-in a lower stress than that of the classical scaling solution.Figure 7shows the configuration from the ordinal
-scaling of the Manhattan distances matrix.
+the "stress" of the configuration. Using a random start, the resulting configuration of the ordinal scaling results in a lower stress than that of the classical scaling solution. Figure 7 shows the configuration from the ordinal scaling of the Manhattan distances matrix.
+
+```
+Figure 7: Configuration from Ordinal scaling (Manhattan) with lower stress
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/7.png)
 
 # 4 Comparison of Configurations
 
-Procrustes Analysis can be used to compare configurations.Figure 8shows the aligned configurations for the
+Procrustes Analysis can be used to compare configurations. Figure 8 shows the aligned configurations for the
 classical and ordinal configurations from the Manhattan distances. The configurations have some similarities,
 especially around the edges, but are distinctly different from eachother. The ordinal scaled configuration will
 be chosen since its stress was lower as previously discussed.
+
+```
+Figure 8: Classical and Ordinal Configurations aligned
+(Manhatten)
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/8.png)
 
 # 5 K-Means Clustering and Labelling
 
 A K-Means clusterings is applied to the data to obtain 4 clusters. In order to label these clusters, the 3 nearest
 neighbours were computed for each centroid. The most common word (standardized) was chosen to be the
 label for that centroid. The final configuration is plotted using the ordinal scaling with the labelled centroids
-inFigure 9.
+in Figure 9.
+
+```
+Figure 9: Final Labelled Configurations using K-Means
+```
+![Image](https://github.com/leonwu4951/paper-configurations/blob/master/figures/9.png)
 
 # 6 Conclusion
 
@@ -97,33 +129,6 @@ papers and words can be used to construct more complex configurations. The label
 from optimal; for example the number of clusters was arbitrary and can be decided in a more systematic way
 using silhouette plots, say.
 
-
-
-
-Figure 3: Eigenvalues from the Euclidean Distance Ma-
-trix
-
-```
-Figure 4: Eigenvalues from the Manhatten Distance
-Matrix
-```
-
-Figure 5: Configuration from Classical scaling (Eu-
-clidean)
-
-```
-Figure 6: Configuration from Classical scaling (Man-
-hattan)
-```
-Figure 7: Configuration from Ordinal scaling (Manhat-
-tan) with lower stress
-
-```
-Figure 8: Classical and Ordinal Configurations aligned
-(Manhatten)
-```
-
-Figure 9: Final Labelled Configurations using K-Means
 
 
 # How to fetch PDFs from Google Scholar
