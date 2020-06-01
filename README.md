@@ -11,15 +11,15 @@ This is useful since you can understand better how different topics and individu
 in a more informative and exploratory way.
 The method of collecting the data is as follows:
 
-- Scrape statistics lecture notes to acquire a list o fp≈ 50 words (ignoring common English words) that will
+- Scrape statistics lecture notes to acquire a list of p≈ 50 words (ignoring common English words) that will
     be used to describe each paper. See the wordcloud generated from the lecture notes (Figure 1) to get an
     idea of these words.
 - Use keywords and Google Scholar (See Github link for details) to collect papers relating to the subject of
     statistics
-- Count the number of occurunces of each of the words in each of then≈ 50 papers.
+- Count the number of occurunces of each of the words in each of them ≈ 50 papers.
 
 This result is annxpmatrix. This can easily be expanded to include more words and papers, and a small
-example (n, p≈ 50 ) is used in order to better illustrate the methods. A heatmap representing the data used
+example (n, p ≈ 50 ) is used in order to better illustrate the methods. A heatmap representing the data used
 can be found in Figure 2.
 
 ```
