@@ -1,4 +1,19 @@
-# Recommender System for Academic Papers using Multidimensional Scaling
+# Recommender System for Academic Papers using Multidimensional Scaling in R
+
+---
+## Overview
+- Goal: Reveal configurations of academic papers so that a user can find targeted lists of research materials
+- Dissimilarity measures
+- Data scraping using unix and Google Scholar
+- Classical and Ordinal Scaling, analysis of eigenvalues
+- K-Means Clustering of final configurations for labelling
+
+Word Counts in Papers  |  Heatmap of Word Frequencies for Each Paper
+:-------------------------:|:-------------------------:
+![](https://github.com/leonwu4951/Paper-Configurations/blob/master/figures/1.jpg)  |  ![](https://github.com/leonwu4951/paper-configurations/blob/master/figures/2.png)
+---
+
+
 
 # 1 Choice of Data
 
