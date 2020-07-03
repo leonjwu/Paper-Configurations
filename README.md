@@ -10,7 +10,7 @@
 
 Word Counts in Papers  |  Heatmap of Word Frequencies for Each Paper
 :-------------------------:|:-------------------------:
-![](https://github.com/leonwu4951/Paper-Configurations/blob/master/figures/1.jpg)  |  ![](https://github.com/leonwu4951/paper-configurations/blob/master/figures/2.png)
+![](https://github.com/leonjwu/Paper-Configurations/blob/master/figures/1.jpg)  |  ![](https://github.com/leonjwu/paper-configurations/blob/master/figures/2.png)
 ---
 
 
